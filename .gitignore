@@ -1,0 +1,11 @@
+/.next/
+/.localappdata/
+/.npm-cache/
+/node_modules/
+/out/
+/output/
+/assets/
+/carousel-images.js
+/dist/
+/coverage/
+*.log
