@@ -20,6 +20,14 @@ export type PricingPlan = {
   featured?: boolean;
 };
 
+export type Testimonial = {
+  name: string;
+  pet: string;
+  role: string;
+  quote: string;
+  highlight: string;
+};
+
 export const heroMetrics = [
   { value: "3000+", label: "\u7d2f\u8ba1\u6d17\u62a4\u670d\u52a1" },
   { value: "98%", label: "\u56de\u8bbf\u6ee1\u610f\u5ea6" },
@@ -110,5 +118,56 @@ export const pricingPlans: PricingPlan[] = [
       "\u8212\u7f13\u68b3\u7406\u6309\u6469"
     ],
     cta: "\u54a8\u8be2\u8be6\u60c5"
+  }
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    name: "林女士",
+    pet: "比熊 Lucky",
+    role: "月度洗护会员",
+    quote:
+      "第一次来就很放心，美容师会先沟通想要的造型和毛量状态，洗完香味干净但不刺鼻，Lucky 回家以后也没有紧张感。",
+    highlight: "细节沟通很到位"
+  },
+  {
+    name: "周先生",
+    pet: "柯基 七喜",
+    role: "基础净洗常客",
+    quote:
+      "掉毛季来做深层梳理特别明显，店里会把脚底和屁屁周围修得很利落，回家地板上的浮毛少了很多。",
+    highlight: "掉毛季救星"
+  },
+  {
+    name: "赵女士",
+    pet: "布偶猫 糯米",
+    role: "猫咪护理预约",
+    quote:
+      "原本很担心猫咪应激，结果全程节奏很稳，店员也会及时反馈状态。吹毛和开结都很温柔，出来以后毛特别蓬松。",
+    highlight: "对敏感宠物很友好"
+  },
+  {
+    name: "陈先生",
+    pet: "泰迪 豆包",
+    role: "精致美容洗护",
+    quote:
+      "修脸真的很自然，不会剪得太夸张，圆脸和耳位都处理得刚刚好。每次做完像换了一只小狗，拍照特别上镜。",
+    highlight: "造型审美在线"
+  },
+  {
+    name: "高女士",
+    pet: "博美 奶芙",
+    role: "SPA 护理体验",
+    quote:
+      "奶芙皮肤有点干，做完护理以后摸起来顺很多，店里还会提醒日常梳毛和沐浴频率，不是只做服务不管后续。",
+    highlight: "会给实用护理建议"
+  },
+  {
+    name: "孙先生",
+    pet: "雪纳瑞 七喜",
+    role: "新客首次到店",
+    quote:
+      "环境比想象中更整洁，没有很重的宠物味，等待区也舒服。第一次体验就送了基础清洁，整体感受很完整。",
+    highlight: "门店环境加分"
   }
 ];
