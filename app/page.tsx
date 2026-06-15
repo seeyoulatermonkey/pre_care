@@ -4,11 +4,13 @@ import { Header } from "@/components/Header";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { PricingSection } from "@/components/PricingSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 import {
   carouselSlides,
   heroMetrics,
   pricingPlans,
-  serviceCards
+  serviceCards,
+  testimonials
 } from "@/data/site";
 
 const eyebrow = "\u6e29\u67d4\u6d17\u62a4 \u00b7 \u9ad8\u7aef\u73af\u5883 \u00b7 \u900f\u660e\u62a5\u4ef7";
@@ -58,6 +60,7 @@ export default function HomePage() {
 
         <ServicesSection items={serviceCards} />
         <PricingSection items={pricingPlans} />
+        <TestimonialsSection items={testimonials} />
         <ContactSection />
       </main>
       <Footer />

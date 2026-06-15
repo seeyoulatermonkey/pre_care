@@ -485,6 +485,114 @@ section {
   border-bottom-color: rgba(255, 255, 255, 0.18);
 }
 
+.testimonials-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(63, 95, 85, 0.08), rgba(217, 139, 98, 0.12));
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow);
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 0.65s ease;
+  will-change: transform;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  padding: 34px;
+  border-radius: 26px;
+  background: rgba(255, 251, 246, 0.92);
+  border: 1px solid rgba(39, 71, 63, 0.08);
+}
+
+.testimonial-highlight {
+  display: inline-flex;
+  margin-bottom: 18px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(217, 139, 98, 0.14);
+  color: #a35f3a;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.testimonial-quote {
+  margin-bottom: 22px;
+  font-size: clamp(1.18rem, 2vw, 1.55rem);
+  line-height: 1.75;
+  color: var(--deep-2);
+}
+
+.testimonial-meta {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+}
+
+.testimonial-meta strong {
+  color: var(--deep);
+  font-size: 1.02rem;
+}
+
+.testimonial-controls,
+.testimonial-arrows {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-controls {
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 6px 0;
+}
+
+.testimonial-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.testimonial-dot,
+.testimonial-arrow {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.testimonial-dot:hover,
+.testimonial-arrow:hover {
+  transform: translateY(-2px);
+}
+
+.testimonial-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(63, 95, 85, 0.22);
+}
+
+.testimonial-dot.active {
+  background: var(--deep);
+  box-shadow: 0 0 0 5px rgba(63, 95, 85, 0.08);
+}
+
+.testimonial-arrows {
+  gap: 10px;
+}
+
+.testimonial-arrow {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--deep-2);
+  font-size: 1.1rem;
+}
+
 .contact-grid {
   grid-template-columns: 1fr 0.95fr;
 }
@@ -543,6 +651,10 @@ section {
   .hero-carousel {
     min-height: 500px;
   }
+
+  .testimonial-card {
+    padding: 28px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -597,6 +709,11 @@ section {
 
   .footer {
     flex-direction: column;
+  }
+
+  .testimonial-controls {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
