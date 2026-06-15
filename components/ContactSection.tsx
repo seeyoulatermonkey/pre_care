@@ -5,6 +5,11 @@ const intro =
 const callCta = "\u7535\u8bdd\u54a8\u8be2";
 const infoEyebrow = "\u95e8\u5e97\u4fe1\u606f";
 const infoTitle = "\u9ad8\u7aef\u6d17\u62a4\u7a7a\u95f4\u5c55\u793a\u6837\u677f";
+const address = "XX \u5e02 XX \u533a XX \u8def 18 \u53f7 1 \u5c42";
+const mapTitle = "\u95e8\u5e97\u5730\u56fe";
+const mapHint = "\u53ef\u4ee5\u76f4\u63a5\u66ff\u6362\u6210\u4f60\u7684\u771f\u5b9e\u95e8\u5e97\u5730\u5740\uff0c\u5c4a\u65f6\u5730\u56fe\u4f1a\u81ea\u52a8\u5bf9\u5e94\u5230\u6b63\u786e\u4f4d\u7f6e\u3002";
+const mapSrc =
+  "https://maps.google.com/maps?q=XX%20%E5%B8%82%20XX%20%E5%8C%BA%20XX%20%E8%B7%AF%2018%20%E5%8F%B7%201%E5%B1%82&z=16&output=embed";
 
 export function ContactSection() {
   return (
@@ -29,7 +34,7 @@ export function ContactSection() {
             </li>
             <li>
               <strong>{"\u95e8\u5e97\u5730\u5740\uff1a"}</strong>
-              {"XX \u5e02 XX \u533a XX \u8def 18 \u53f7 1 \u5c42"}
+              {address}
             </li>
             <li>
               <strong>{"\u9884\u7ea6\u7535\u8bdd\uff1a"}</strong>
@@ -40,6 +45,21 @@ export function ContactSection() {
               {"\u65b0\u5ba2\u6d17\u62a4\u7acb\u51cf 30 \u5143"}
             </li>
           </ul>
+
+          <div className="store-map">
+            <div className="store-map-copy">
+              <strong>{mapTitle}</strong>
+              <p>{mapHint}</p>
+            </div>
+            <div className="store-map-frame">
+              <iframe
+                src={mapSrc}
+                title={mapTitle}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
         </article>
       </div>
     </section>

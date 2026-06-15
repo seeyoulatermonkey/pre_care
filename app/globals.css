@@ -499,6 +499,11 @@ section {
   color: rgba(255, 255, 255, 0.86);
 }
 
+.contact-card.info {
+  display: grid;
+  gap: 20px;
+}
+
 .contact-list {
   list-style: none;
   padding: 0;
@@ -511,6 +516,37 @@ section {
   padding: 14px 16px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.store-map {
+  display: grid;
+  gap: 14px;
+}
+
+.store-map-copy strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.store-map-copy p {
+  margin: 0;
+}
+
+.store-map-frame {
+  min-height: 320px;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.store-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border: 0;
+  display: block;
 }
 
 .footer {
@@ -598,5 +634,9 @@ section {
   .footer {
     flex-direction: column;
   }
-}
 
+  .store-map-frame,
+  .store-map-frame iframe {
+    min-height: 280px;
+  }
+}
